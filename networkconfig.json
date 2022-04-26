@@ -10,7 +10,7 @@
         "transactionConfirmationBlocks": 2,
         "contracts": {
             "simple": {
-                "path": "client/src/contracts/Imovel.json",
+                "path": "client/src/contracts/Record_keeper.json",
                 "gas": {
                     "open": 45000,
                     "query": 100000,

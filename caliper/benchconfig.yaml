@@ -5,16 +5,16 @@ test:
       type: local
       number: 2
     rounds:
-      - label: readImovel
-        description: Imovel benchmark
+      - label: recordkeeper
+        description: Record Keeper benchmark
         txDuration: 30
         rateControl: 
           type: fixed-load
           opts:
             tps: 10
         workload:
-          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/readImovel.js
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
           arguments:
             assets: 10
-            contractId: imovel
+            contractId: recordkeeper
 
