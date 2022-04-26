@@ -11,9 +11,14 @@
         "transactionConfirmationBlocks": 2,
         "contracts": {
             "record_keeper": {
+
                 "path": "/home/chirag/RP2/Projeto-3/Ethereum/Ethereum/build/contracts/Record_keeper.json",
                 
                 "address": "0x682682807C08F3F871A8F622417F6eccaB8Df6EB",
+                "gas": {
+                    "addTreatment": 3000000,
+                    "viewHistory": 3000000 
+                },
                 "abi": [
                           {
                             "constant": false,

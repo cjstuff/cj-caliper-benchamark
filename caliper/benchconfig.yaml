@@ -1,20 +1,276 @@
 test:
-    name: basic-contract-benchmark
-    description: test benchmark
+    name: Record_keeper Smart Contract Benchmark - Ganache Simulation
+    description: Benchmark for Record_keeper Ethereum Smart Contract
     workers:
       type: local
-      number: 2
+      number: 1
     rounds:
-      - label: recordkeeper
+      #---------------------------------------------------------------Recordkeeper increasing send rate:---------------------------------------------------------------
+      - label: Recordkeeper 100tx @ 10 TPS
         description: Record Keeper benchmark
-        txDuration: 30
+        txNumber: 100
+        #txDuration: 30
         rateControl: 
-          type: fixed-load
-          opts:
+          type: fixed-rate
+          opts: {
             tps: 10
+          }
         workload:
           module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
           arguments:
-            assets: 10
+            assets: 1
             contractId: recordkeeper
 
+      - label: Recordkeeper 100tx @ 20 TPS
+        description: Record Keeper benchmark
+        txNumber: 100
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 20
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 100tx @ 30 TPS
+        description: Record Keeper benchmark
+        txNumber: 100
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 30
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 100tx @ 40 TPS
+        description: Record Keeper benchmark
+        txNumber: 100
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 40
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 100tx @ 50 TPS
+        description: Record Keeper benchmark
+        txNumber: 100
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 50
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 100tx @ 60 TPS
+        description: Record Keeper benchmark
+        txNumber: 100
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 60
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 100tx @ 70 TPS
+        description: Record Keeper benchmark
+        txNumber: 100
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 70
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 100tx @ 80 TPS
+        description: Record Keeper benchmark
+        txNumber: 100
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 80
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 100tx @ 90 TPS
+        description: Record Keeper benchmark
+        txNumber: 100
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 90
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 100tx @ 100 TPS
+        description: Record Keeper benchmark
+        txNumber: 100
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 100
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+#---------------------------------------------------------------Record Keeper increasing number of transactions:---------------------------------------------------------------
+
+      - label: Recordkeeper 200tx @ 100 TPS
+        description: Record Keeper benchmark
+        txNumber: 200
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 100
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 300tx @ 100 TPS
+        description: Record Keeper benchmark
+        txNumber: 300
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 100
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 400tx @ 100 TPS
+        description: Record Keeper benchmark
+        txNumber: 400
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 100
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 500tx @ 100 TPS
+        description: Record Keeper benchmark
+        txNumber: 500
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 100
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 600tx @ 100 TPS
+        description: Record Keeper benchmark
+        txNumber: 600
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 100
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 700tx @ 100 TPS
+        description: Record Keeper benchmark
+        txNumber: 700
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 100
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 800tx @ 100 TPS
+        description: Record Keeper benchmark
+        txNumber: 800
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 100
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 900tx @ 100 TPS
+        description: Record Keeper benchmark
+        txNumber: 100
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 100
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
+
+      - label: Recordkeeper 1000tx @ 100 TPS
+        description: Record Keeper benchmark
+        txNumber: 1000
+        rateControl: 
+          type: fixed-rate
+          opts: {
+            tps: 100
+          }
+        workload:
+          module: /home/chirag/RP2/Projeto-3/Ethereum/Ethereum/caliper/recordkeeper.js
+          arguments:
+            assets: 1
+            contractId: recordkeeper
