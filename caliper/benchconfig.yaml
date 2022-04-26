@@ -249,7 +249,7 @@ test:
 
       - label: Recordkeeper 900tx @ 100 TPS
         description: Record Keeper benchmark
-        txNumber: 100
+        txNumber: 900
         rateControl: 
           type: fixed-rate
           opts: {
